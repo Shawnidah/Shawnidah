@@ -64,11 +64,3 @@ header{
 .head{
     text-align: center;
 }
-.center{
-    margin: 0 auto;
-    color: red;
-    cursor: pointer;
-}
-.center:hover{
-
-}
