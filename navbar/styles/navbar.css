@@ -10,11 +10,7 @@ body{
 }
 header{
     height: 100vh;
-<<<<<<< HEAD
     background-image: url('../images/jannes-glas-0NaQQsLWLkA-unsplash.jpg');
-=======
-    background-image: url('../../../images/javier-martinez-hUD0PUczwJQ-unsplash.jpg');
->>>>>>> 71e03bf06485e7955ec98db7453dcaf2aa7f0a19
     background-size: cover;
     background-position: center;
 }
