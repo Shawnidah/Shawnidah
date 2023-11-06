@@ -4,63 +4,79 @@
     box-sizing:border-box;
     font-family:'Open Sans', san-serif;
 }
+
 body{
+    overflow-x: hidden !important;
+}
+header{
     height: 100vh;
-    background-image: url('../../../images/Unsplash/javier-martinez-hUD0PUczwJQ-unsplash.jpg');
+    background-image: url('../images/jannes-glas-0NaQQsLWLkA-unsplash.jpg');
     background-size: cover;
     background-position: center;
 }
 li{
     list-style: none;
 }
-a{
+a.navlink{
     font-size: 1rem;
-    color: #000;
-    text-decoration: none;
+    display: inline-block;
 }
-a:hover{
+a.navlink:hover{
     color: orange;
     text-decoration: underline;
 }
-header{
-    position: relative;
-    padding: 0 2rem;   
-}
 .navbar{
+    position: fixed;
+    padding: 0 2rem;
     width: 100%;
     height: 60px;
-    max-width: 1200px;
     margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-right: 0;
+    background-color:  #403c3c65;
+    transition-duration: .5s;
 }
-.navbar .logo a{
-    font: size 1.5rem;
+.navbar .logo{
+    font-size: 1.5rem;
     font-weight: bold;
+    color: white;
 }
 .navbar .links{
     display: flex;
     gap: 2rem;
 }
 .navbar .toggle_btn{
-    color: #000;
+    color: white;
     font-size: 1.5rem;
     cursor: pointer;
     display: none;
 }
 .action_btn{
-    background-color: orange;
-    color: #000;
-    padding: 0.5rem 1rem;
-    border: none;
-    outline: none;
-    border-radius: 20px;
-    font-size: 0.8rem;
+    color: white;
+    margin-left: 0;
 }
-.action_btn:hover{
-    background-color: #000 !important;
+section{
+    height: 100vh;
 }
-.head{
-    text-align: center;
+.scrolled{
+    background-color: #403c3cbc;
+
+}
+ul.logging{
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background-color: #1f1b1b;
+    padding: 5px;
+    
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.logging li{
+    padding: 10px;
 }
