@@ -5,6 +5,10 @@
     font-family:'Open Sans', san-serif;
 }
 
+::-webkit-scrollbar{
+    display: none;
+}
+
 body{
     overflow-x: hidden !important;
 }
@@ -13,6 +17,7 @@ header{
     background-image: url('../images/jannes-glas-0NaQQsLWLkA-unsplash.jpg');
     background-size: cover;
     background-position: center;
+    display: grid;
 }
 li{
     list-style: none;
@@ -53,12 +58,15 @@ a.navlink:hover{
     cursor: pointer;
     display: none;
 }
-.action_btn{
+.action-btn{
     color: white;
     margin-left: 0;
 }
+.action-btn:hover{
+    color: orange;
+}
 section{
-    height: 100vh;
+    height: 150vh;
 }
 .scrolled{
     background-color: #403c3cbc;
@@ -70,13 +78,75 @@ ul.logging{
     right: 10px;
     background-color: #1f1b1b;
     padding: 5px;
+    border-radius: 3px;
     
 }
 a{
     text-decoration: none;
     color: white;
 }
+a:hover{
+    color: orange;
+}
 
 .logging li{
     padding: 10px;
+}
+.hidden{
+    display: none;
+}
+.words{
+    width: 50%;
+    font-size: 6em;
+    color: white;
+    align-self: self-end;
+    margin: 5px;
+}
+.ready{
+    justify-self: right;
+    align-self: center;
+    color: white;
+    font-size: 2.5em;
+    width: 45%;
+}
+.sign{
+    justify-self: right;
+    align-self: self-end;
+    width: 10vw;
+    text-align: center;
+}
+button.signup{
+    background-color: #1f1b1b;
+    color: orange;
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 5px;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+button.signup:hover{
+    background-color: orange;
+    color: #1f1b1b;
+    border: none;
+}
+button.signup:active{
+    background-color: rgba(255, 166, 0, 0.326);
+}
+div.sectionmain{
+    display: flex;
+    height: 100%;
+}
+div.basketball{
+    width: 20vw;
+    height: 0;
+    border-radius: 8px;
+    align-self: center;
+    border: black solid 2px;
+}
+img{
+    object-fit: cover
+}
+footer{
+    height: 75vh;
+    background-color: #1f1b1b;
 }
