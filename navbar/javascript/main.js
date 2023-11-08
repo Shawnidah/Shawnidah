@@ -8,7 +8,6 @@ window.addEventListener('scroll', function() {
   }
 });
 
-
 document.querySelector('.action-btn').addEventListener('click',function(e){
   e.preventDefault();
   e.stopPropagation();
@@ -18,5 +17,18 @@ document.querySelector('.action-btn').addEventListener('click',function(e){
 window.addEventListener('click',function(e){
   if(e.target!==document.querySelector('.logging')){
     document.querySelector('.logging').classList.add('hidden');
+  }
+})
+
+document.querySelector('.media-action-btn').addEventListener('click',function(e){
+  e.preventDefault();
+  e.stopPropagation();
+  document.querySelector('.sidebar').classList.toggle('hidden');
+  console.log('Done!!!');
+})
+
+window.addEventListener('click',function(e){
+  if(e.target!==document.querySelector('.sidebar')){
+    document.querySelector('.sidebar').classList.add('hidden');
   }
 })
