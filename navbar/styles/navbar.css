@@ -23,6 +23,7 @@ header{
     background-position: center;
     display: grid;
     width: 100%;
+    margin-bottom: 15vh;
 }
 li{
     list-style: none;
@@ -195,6 +196,21 @@ figcaption a{
 .media-action-btn{
     display: none;
 }
+.texts{
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(174, 119, 17);
+    text-align: center;
+}
+.oneplace{
+    width: 30%;
+}
+footer{
+    height: 75vh;
+    background-color: #1f1b1b;
+    margin-top:15vh;
+}
 @media screen and (max-width:900px){
     .ready{
         font-size: 2em;
@@ -250,17 +266,18 @@ figcaption a{
         font-size: 20px;
         user-select: none;
     }
-    .sportslide{
+    div.sportslide{
         display: grid;
-        flex-direction: column;
-        overflow-y:visible;
+        height: auto;
         border: none;
+        overflow: visible;
     }
     img{
         height: auto;
         width: 90%;
     }
-    section{
-        height: auto;
+    figure{
+        width: 80%;
+        justify-self: center;
     }
 }
