@@ -74,7 +74,7 @@ a.navlink:hover{
     color: orange;
 }
 section{
-    height: 150vh;
+    height: auto;
     display: grid;
 }
 .scrolled{
@@ -157,30 +157,31 @@ div.sportslide{
     height: 15em;
     padding: 10px;
     overflow-x: scroll;
+    margin-top: 10em;
 }
-img{
+div.sportslide img{
     margin-left: 10px;
     margin-right: 10px;
     margin-top: 23px;
     border-radius: 10px;
     border: solid #1f1b1b 2px;
 }
-img:hover{
+div.sportslide img:hover{
     border-color: orange;
 }
-figure{
+div.sportslide figure{
     padding: 5px;
     text-align: center;
     color: #1f1b1b !important;
     box-shadow: 0 0 10px;
     transition-duration: 0.2s;
 }
-figure:hover{
+div.sportslide figure:hover{
     color: orange;
     padding: 10px;
     border: solid orange 2px;
 }
-figcaption a{
+div.sportslide figcaption a{
     color: #1f1b1b;
 }
 .sidebar{
@@ -200,16 +201,57 @@ figcaption a{
     font-size: 2em;
     display: flex;
     justify-content: space-between;
-    color: rgb(174, 119, 17);
+    color: rgb(6, 4, 1);
+
+}
+.oneplace, .enjoy{
+    width: 30%;
     text-align: center;
 }
-.oneplace{
+.sportimage{
     width: 30%;
+    
+    text-align: center;
+}
+.sportimage img{
+    border: #1f1b1b solid 2px;
+    border-radius: 30px;
+}
+.sportimage img:hover{
+    border-color: orange;
+}
+
+div.info{
+    margin-top: 5em;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    font-size: 2em;
+    color: rgb(6, 4, 1);
+}
+div.lines{
+    height: 4em;
+    text-align: center;
+    align-items: stretch;
+    color: #1f1b1b;
 }
 footer{
     height: 75vh;
     background-color: #1f1b1b;
     margin-top:15vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 5em;
+}
+.flexi{
+    display: flex;
+}
+footer .address,.othertexts{
+    color: orange;
+    font-size: 1em;
+}
+.address p,.othertexts p{
+    margin: 15px;
 }
 @media screen and (max-width:900px){
     .ready{
@@ -253,6 +295,9 @@ footer{
     .action-btn{
         display: none;
     }
+    .oneplace{
+        width: 50%;
+    }
 }
 /*mobile*/
 @media screen and (max-width:500px){
@@ -271,13 +316,31 @@ footer{
         height: auto;
         border: none;
         overflow: visible;
+        margin-top:4em;
     }
-    img{
+    div.sportslide img{
         height: auto;
         width: 90%;
     }
-    figure{
+    div.sportslide figure{
         width: 80%;
         justify-self: center;
+    }
+    .texts{
+        display: grid;
+    }
+    .texts div{
+        width: 80%;
+        margin:10px auto;
+    }
+    div.info{
+        margin-top: 3em;
+    }
+    footer{
+        display: grid;
+        height: auto;
+    }
+    .email{
+        margin:1em
     }
 }
