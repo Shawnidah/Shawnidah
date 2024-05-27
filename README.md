@@ -1,5 +1,5 @@
 - 👋 Hi, I’m @Shawnidah
-- 👀 I’m interested in ...Web development and mobile app development
+- 👀 I’m interested in ...Web development , mobile app development and some algorithm designing
 - 🌱 I’m currently learning ...Software Engineering 
 - 💞️ I’m looking to collaborate on ...Web devolpment
 - 📫 How to reach me ...uncle_nidah on instagram and  tag :+263788901002
